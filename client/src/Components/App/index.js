@@ -1,15 +1,11 @@
 import "./App.css";
 import Navbar from "../Navbar/navbar.js";
-<<<<<<< HEAD
 import Userchoice from "../Userchoice/userchoice.js";
 import UserAnswer from "../UserAnswer";
 import ChallengeDesc from "../ChallengeDesc";
-import React, {useState} from 'react'
-||||||| 4424c01
+import React, {useState} from 'react';
 import UserInput from "../UserInput/UserInput";
-=======
 import Darkmode from "../Darkmode/darkmode";
->>>>>>> ca65c7555c38619e2675c68b88d4dc877836cff0
 
 function App() {
 const [message, setMessage] = useState("message");

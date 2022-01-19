@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ChallengeDesc(content) {
+export default function ChallengeDesc({content}) {
 
 
     return (
