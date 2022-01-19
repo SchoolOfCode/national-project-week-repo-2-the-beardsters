@@ -1,9 +1,15 @@
 import "./App.css";
 import Navbar from "../Navbar/navbar.js";
+<<<<<<< HEAD
 import Userchoice from "../Userchoice/userchoice.js";
 import UserAnswer from "../UserAnswer";
 import ChallengeDesc from "../ChallengeDesc";
 import React, {useState} from 'react'
+||||||| 4424c01
+import UserInput from "../UserInput/UserInput";
+=======
+import Darkmode from "../Darkmode/darkmode";
+>>>>>>> ca65c7555c38619e2675c68b88d4dc877836cff0
 
 function App() {
 const [message, setMessage] = useState("message");
@@ -37,7 +43,8 @@ const [answer, setAnswer] = useState("");
 
   return (
     <div className="App" id="home">
-      <Navbar></Navbar>
+
+      <Navbar />
       <Userchoice  onClick={() => getData()} />
     <ChallengeDesc content={message} />
         <details name="See answer" value="See answer" placeholder="see answer">
@@ -45,6 +52,9 @@ const [answer, setAnswer] = useState("");
         <div>          {message.answer}</div>
         </details>
       <UserAnswer onClick={(e) => submitFunction(e)} onChange={(e) => getUserAnswer(e)}/>
+      <Darkmode />
+
+
     </div>
   );
 }
