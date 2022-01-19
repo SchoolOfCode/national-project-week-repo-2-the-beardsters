@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <div>result</div>
     </div>
   );
 }
