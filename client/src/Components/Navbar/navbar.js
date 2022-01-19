@@ -1,6 +1,6 @@
 function Navbar() {
    return  <nav>
-    <a href="">Home</a>
+    <a href="#home">Home</a>
     <br></br>
     <a href="">Resources</a>    
     </nav>
