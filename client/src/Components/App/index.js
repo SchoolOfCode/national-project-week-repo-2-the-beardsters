@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "../Navbar/navbar.js";
-import UserInput from "../UserInput/UserInput";
+import Darkmode from "../Darkmode/darkmode";
 
 function App() {
   async function getData() {
@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div className="App" id="home">
-      <Navbar></Navbar>
-      <UserInput />
+      <Darkmode />
+      <Navbar />
     </div>
   );
 }

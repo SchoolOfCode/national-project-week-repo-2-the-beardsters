@@ -1,38 +1,108 @@
 .App {
   text-align: center;
+  margin: 1.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --1: #000000;
+  --2: #ffe300;
+
+  --3: #f0f6f9;
+  --4: #6998ab;
+  --5: #406882;
+  --6: #1a374d;
+
+  /* --background-color: #fff;
+  --primary-text-color: #222;
+  --secondary-text-color: #444; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark-mode {
+  --1: #000000;
+  --2: #f0f6f9;
+  --3: #6998ab;
+  --4: #406882;
+  --5: #1a374d;
+
+  /* --background-color: #3e4c59;
+  --primary-text-color: #fff;
+  --secondary-text-color: #ddd; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  text-align: center;
+  background-repeat: repeat;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: var(--background-color);
 }
 
-.App-link {
-  color: #61dafb;
+.switch-container {
+  margin-bottom: -60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  display: flex;
+  width: 60px;
+  height: 35px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  background: #222;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+label i {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #c0c0c0;
+}
+
+label .fa-sun {
+  color: gold;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+input:checked + label .fa-sun {
+  transform: translateX(-43px) rotate(160deg);
+  opacity: 0;
+}
+
+label .fa-moon {
+  color: #fff;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateX(43px) rotate(250deg);
+}
+
+input:checked + label .fa-moon {
+  transform: translateX(0) rotate(0);
+  opacity: 1;
+}
+
+label .ball {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  left: 5px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + label .ball {
+  transform: translateX(37px);
+  background: #222;
+}
+
+input {
+  display: none;
 }
