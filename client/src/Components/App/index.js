@@ -14,7 +14,7 @@ function App() {
   const result = getData();
 
   return (
-    <div className="App">
+    <div className="App" id="home">
       <Navbar></Navbar>
       <UserInput />
     </div>
