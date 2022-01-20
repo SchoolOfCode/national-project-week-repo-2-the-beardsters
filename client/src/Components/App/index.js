@@ -40,7 +40,7 @@ function App() {
       <Navbar />
       <Userchoice onClick={null} />
       <h1>Test</h1>
-      <ChallengeDesc test="test" message={message} />
+      <ChallengeDesc message={message} />
       <details name="See answer" value="See answer" placeholder="see answer">
         <summary>See Answer</summary>
         <div> {message.answer}</div>
