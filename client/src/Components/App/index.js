@@ -29,11 +29,11 @@ function App() {
 
   function submitFunction(e) {
     if (answer === message.answer) {
-      console.log(message.answer);
-      console.log("Right answer");
+      //console.log(message.answer);
+      alert("Right answer");
     } else {
-      console.log(message.answer);
-      console.log("wrong answer");
+      //console.log(message.answer);
+      alert("wrong answer");
     }
     setAnswer("");
   }
