@@ -1,9 +1,6 @@
-import Darkmode from "../Darkmode/darkmode";
-
 function Navbar() {
   return (
-    <nav className="nav-bar">
-      <Darkmode />
+    <nav>
       <a href="#">Home</a>
 
       <a href="#">Resources</a>

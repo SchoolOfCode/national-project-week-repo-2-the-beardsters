@@ -1,6 +1,6 @@
 .App {
-  text-align: center;
-  margin: 1.5%;
+  margin: 2px;
+  padding: 0;
 }
 
 :root {
@@ -17,16 +17,16 @@
 }
 
 .dark-mode {
-  --primary-background-colour-2: #1a374d;
-  --switch-ball-colour-2: #1a374d;
-  --panel-inner-colour-2: #000000;
-  --navbar-colour-2: #406882;
-  --panel-outer-colour-2: #406882;
-  --score-colour-2: #406882;
-  --button-colour-2: #6998ab;
-  --score-outline-colour-2: #6998ab;
-  --switch-background-colour-2: #6998ab;
-  --switch-icon-colour-2: #f0f6f9;
+  --primary-background-colour: #1a374d;
+  --switch-ball-colour: #1a374d;
+  --panel-inner-colour: #000000;
+  --navbar-colour: #406882;
+  --panel-outer-colour: #406882;
+  --score-colour: #406882;
+  --button-colour: #6998ab;
+  --score-outline-colour: #6998ab;
+  --switch-background-colour: #6998ab;
+  --switch-icon-colour: #f0f6f9;
 }
 
 body {
@@ -34,11 +34,11 @@ body {
   background-repeat: repeat;
   justify-content: center;
   align-items: center;
-  background: var(--primary-background-colour);
+  background: #f0f6f9;
 }
 
 .switch-container {
-  margin-bottom: -60px;
+  margin-bottom: 5px;
 }
 
 label {
@@ -48,7 +48,7 @@ label {
   justify-content: space-between;
   align-items: center;
   padding: 0 6px;
-  background: var(--switch-background-colour);
+  background: #000000;
   border-radius: 50px;
   cursor: pointer;
   position: relative;
@@ -60,11 +60,11 @@ label i {
 }
 
 input:checked + label {
-  background: var(--switch-background-colour-2);
+  background: #6998ab;
 }
 
 label .fa-sun {
-  color: var(--switch-icon-colour);
+  color: #ffe300;
   transition: 0.3s;
   opacity: 1;
 }
@@ -75,7 +75,7 @@ input:checked + label .fa-sun {
 }
 
 label .fa-moon {
-  color: var(--switch-icon-colour-2);
+  color: #f0f6f9;
   transition: 0.3s;
   opacity: 0;
   transform: translateX(43px) rotate(250deg);
@@ -93,17 +93,43 @@ label .ball {
   height: 25px;
   top: 5px;
   left: 5px;
-  background: var(--switch-ball-colour);
+  background: #f0f6f9;
   border-radius: 50%;
   transition: 0.3s;
 }
 
 input:checked + label .ball {
   transform: translateX(37px);
-  background: var(--switch-ball-colour-2);
+  background: #1a374d;
 }
 
-/* USERCHOICE
+.dark-mode-input {
+  display: none;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 20px;
+  width: 100px;
+  background-color: var(--navbar-colour);
+}
+
+/* USER CHOICE */
+
+.userchoice {
+  background-color: var(--panel-outer-colour);
+  height: 100px;
+  width: 50px;
+}
+
+/* USER WORKSPACE */
+
+.userworkspace {
+  background-color: var(--panel-outer-colour);
+  height: 100px;
+  width: 50px;
+}
 
 .form-user-choice {
   display: flex;
@@ -113,7 +139,23 @@ input:checked + label .ball {
   margin-bottom: 1em;
 }
 
-.btn-choice {
+.btn-choice-frontend {
+  display: flex;
+  width: 70px;
+  height: 35px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  background: #222;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 8px;
+  margin-right: 5px;
+  background-color: #6998ab;
+}
+
+.btn-choice-backend {
   display: flex;
   width: 70px;
   height: 35px;

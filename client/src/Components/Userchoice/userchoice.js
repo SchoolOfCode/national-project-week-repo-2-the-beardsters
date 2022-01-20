@@ -1,11 +1,17 @@
-function Userchoice(props) {
+function Userchoice({ getQuestion }) {
   return (
     <div className="form-user-choice">
-      <button className="btn-choice" onClick={props.onClick}>
-        Front-End
+      <button
+        className="btn-choice-frontend"
+        onClick={() => getQuestion("frontend")}
+      >
+        Frontend
       </button>
-      <button className="btn-choice" onClick={props.onClick}>
-        Back-End
+      <button
+        className="btn-choice-backend"
+        onClick={() => getQuestion("backend")}
+      >
+        Backend
       </button>
     </div>
   );
