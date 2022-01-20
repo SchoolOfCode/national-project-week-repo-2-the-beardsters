@@ -1,11 +1,11 @@
 function Darkmode() {
   return (
-    <div class="switch-container">
+    <div className="switch-container">
       <input type="checkbox" id="switch" />
-      <label for="switch">
-        <i class="fa fa-moon"></i>
-        <i class="fa fa-sun"></i>
-        <span class="ball"></span>
+      <label htmlFor="switch">
+        <i className="fa fa-moon"></i>
+        <i className="fa fa-sun"></i>
+        <span className="ball"></span>
       </label>
     </div>
   );

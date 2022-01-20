@@ -1,10 +1,10 @@
 import React from "react";
 import "../../Components/App/App.css";
-export default function ChallengeDesc({ content }) {
+export default function ChallengeDesc({ message }) {
   return (
     <div>
-      <h4>{content.name}</h4>
-      <p>{content.description}</p>
+      <h4>{message.name}</h4>
+      <p>{message.description}</p>
     </div>
   );
 }
