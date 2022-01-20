@@ -35,6 +35,7 @@ function App() {
       console.log(message.answer);
       console.log("wrong answer");
     }
+    setAnswer("");
   }
 
   return (
@@ -51,6 +52,7 @@ function App() {
       <UserAnswer
         onClick={(e) => submitFunction(e)}
         onChange={(e) => getUserAnswer(e)}
+        value={answer}
       />
     </div>
   );

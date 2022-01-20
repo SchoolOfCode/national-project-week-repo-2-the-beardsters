@@ -1,40 +1,32 @@
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0 auto;
-}
 .App {
-  margin: auto;
-  width: fixed;
-  padding: 0.5rem;
+  text-align: center;
+  margin: 1.5%;
 }
 
 :root {
-  --1: #000000;
-  --2: #ffe300;
-
-  --3: #f0f6f9;
-  --4: #6998ab;
-  --5: #406882;
-  --6: #1a374d;
-
-  /* --background-color: #fff;
-  --primary-text-color: #222;
-  --secondary-text-color: #444; */
+  --primary-background-colour: #f0f6f9;
+  --switch-ball-colour: #f0f6f9;
+  --panel-inner-colour: #f0f6f9;
+  --navbar-colour: #6998ab;
+  --panel-outer-colour: #6998ab;
+  --score-colour: #406882;
+  --button-colour: #1a374d;
+  --score-outline-colour: #1a374d;
+  --switch-background-colour: #000000;
+  --switch-icon-colour: #ffe300;
 }
 
 .dark-mode {
-  --1: #000000;
-  --2: #f0f6f9;
-  --3: #6998ab;
-  --4: #406882;
-  --5: #1a374d;
-
-  /* --background-color: #3e4c59;
-  --primary-text-color: #fff;
-  --secondary-text-color: #ddd; */
+  --primary-background-colour-2: #1a374d;
+  --switch-ball-colour-2: #1a374d;
+  --panel-inner-colour-2: #000000;
+  --navbar-colour-2: #406882;
+  --panel-outer-colour-2: #406882;
+  --score-colour-2: #406882;
+  --button-colour-2: #6998ab;
+  --score-outline-colour-2: #6998ab;
+  --switch-background-colour-2: #6998ab;
+  --switch-icon-colour-2: #f0f6f9;
 }
 
 body {
@@ -42,22 +34,24 @@ body {
   background-repeat: repeat;
   justify-content: center;
   align-items: center;
-  background: var(--background-color);
+  background: var(--primary-background-colour);
+}
+
+.switch-container {
+  margin-bottom: -60px;
 }
 
 label {
   display: flex;
-  width: 70px;
+  width: 60px;
   height: 35px;
   justify-content: space-between;
   align-items: center;
   padding: 0 6px;
-  background: #222;
+  background: var(--switch-background-colour);
   border-radius: 50px;
+  cursor: pointer;
   position: relative;
-  margin-bottom: 8px;
-  margin-right: 5px;
-  background-color: #6998ab;
 }
 
 label i {
@@ -66,11 +60,11 @@ label i {
 }
 
 input:checked + label {
-  background: #c0c0c0;
+  background: var(--switch-background-colour-2);
 }
 
 label .fa-sun {
-  color: gold;
+  color: var(--switch-icon-colour);
   transition: 0.3s;
   opacity: 1;
 }
@@ -81,7 +75,7 @@ input:checked + label .fa-sun {
 }
 
 label .fa-moon {
-  color: #fff;
+  color: var(--switch-icon-colour-2);
   transition: 0.3s;
   opacity: 0;
   transform: translateX(43px) rotate(250deg);
@@ -99,21 +93,17 @@ label .ball {
   height: 25px;
   top: 5px;
   left: 5px;
-  background: #fff;
+  background: var(--switch-ball-colour);
   border-radius: 50%;
   transition: 0.3s;
 }
 
 input:checked + label .ball {
   transform: translateX(37px);
-  background: #222;
+  background: var(--switch-ball-colour-2);
 }
 
-input {
-  display: none;
-}
-
-/* USERCHOICE */
+/* USERCHOICE
 
 .form-user-choice {
   display: flex;
@@ -140,7 +130,7 @@ input {
 }
 
 /* NAVBAR */
-.nav-bar {
+/* .nav-bar {
   display: flex;
   justify-content: space-between;
 }
@@ -150,4 +140,4 @@ input {
   font-weight: bold;
   font-size: 1.5rem;
   color: black;
-}
+} */
