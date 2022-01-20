@@ -4,6 +4,8 @@ import Navbar from "../Navbar/navbar.js";
 import Userchoice from "../Userchoice/userchoice.js";
 import UserAnswer from "../UserAnswer";
 import ChallengeDesc from "../ChallengeDesc";
+import Userworkspace from "../Userworkspace/workspace";
+import Hints from "../Hints/hints";
 
 function App() {
   const [message, setMessage] = useState({});
@@ -39,7 +41,8 @@ function App() {
     <div className="App" id="home">
       <Navbar />
       <Userchoice onClick={null} />
-      <h1>Test</h1>
+      <Userworkspace message={message} />
+      <Hints message={message} />
       <ChallengeDesc message={message} />
       <details name="See answer" value="See answer" placeholder="see answer">
         <summary>See Answer</summary>
