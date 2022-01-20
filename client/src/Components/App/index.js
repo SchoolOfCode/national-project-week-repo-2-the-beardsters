@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "../Navbar/navbar.js";
 import Userchoice from "../Userchoice/userchoice.js";
 import UserAnswer from "../UserAnswer";
 import ChallengeDesc from "../ChallengeDesc";
-import Darkmode from "../Darkmode/darkmode";
 
 function App() {
   const [message, setMessage] = useState("message");
@@ -13,7 +12,7 @@ function App() {
   async function getData() {
     const res = await fetch("https://soc-challenge-generator.herokuapp.com/");
     const data = await res.json();
-    console.log(data);
+    console.log(data.payload[0]);
     setMessage(data.payload[0]);
     return data;
   }
@@ -36,8 +35,9 @@ function App() {
   return (
     <div className="App" id="home">
       <Navbar />
-      <Userchoice onClick={() => getData()} />
-      <ChallengeDesc content={message} />
+      <Userchoice onClick123={getData} />
+      <h1>Test</h1>
+      <ChallengeDesc test="test" content={message} />
       <details name="See answer" value="See answer" placeholder="see answer">
         <summary>See Answer</summary>
         <div> {message.answer}</div>
@@ -46,7 +46,6 @@ function App() {
         onClick={(e) => submitFunction(e)}
         onChange={(e) => getUserAnswer(e)}
       />
-      <Darkmode />
     </div>
   );
 }

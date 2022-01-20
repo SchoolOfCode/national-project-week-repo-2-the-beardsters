@@ -1,12 +1,16 @@
-import React from 'react';
+import React from "react";
 
 export default function UserAnswer(props) {
+  return (
+    <form action="#">
+      <input
+        type="text"
+        placeholder="Add your answer here"
+        onChange={props.onChange}
+      />
 
-
-    return (
-        <div>
-        <input type="text" placeholder="Add your answer here" onChange={props.onChange}></input>
-        <input type="submit" text="Submit" value="Submit" onClick={props.onClick}></input>
-        </div>
-    )
+      <label>SUBMIT</label>
+      <input type="submit" value="Submit" onClick={props.onClick} />
+    </form>
+  );
 }

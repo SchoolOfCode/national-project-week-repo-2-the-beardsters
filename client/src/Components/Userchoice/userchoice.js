@@ -1,16 +1,14 @@
 function Userchoice(props) {
-return (
-    <div>
-<form>
-    <label htmlFor="frontend">Frontend</label>
-    <input type="radio" value="frontend" name="frontend"></input>
-    <label htmlFor="backend">Backend</label>
-    <input type="radio"></input>
-   
-</form>
- <button onClick={props.onClick}>Get your challenge</button>
-</div>
-)
+  return (
+    <div className="form-user-choice">
+      <button className="btn-choice" onClick={props.onClick}>
+        Front-End
+      </button>
+      <button className="btn-choice" onClick={props.onClick}>
+        Back-End
+      </button>
+    </div>
+  );
 }
 
 export default Userchoice;
