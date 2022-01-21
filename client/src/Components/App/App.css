@@ -112,6 +112,8 @@ input:checked + label .ball {
 .navbar {
   height: 20px;
   width: 100px;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--navbar-colour);
 }
 
@@ -140,35 +142,38 @@ input:checked + label .ball {
 }
 
 .btn-choice-frontend {
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 18px;
   display: flex;
-  width: 70px;
-  height: 35px;
+  width: 170px;
+  height: 40px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6px;
-  background: #222;
-  border-radius: 50px;
+  padding: 0 50px;
+  color: #f0f6f9;
+  border-radius: 10px 10px 10px 10px;
   cursor: pointer;
   position: relative;
   margin-bottom: 8px;
   margin-right: 5px;
-  background-color: #6998ab;
+  background-color: #1a374d;
 }
 
 .btn-choice-backend {
+  font-size: 18px;
   display: flex;
-  width: 70px;
-  height: 35px;
+  width: 170px;
+  height: 40px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6px;
-  background: #222;
-  border-radius: 50px;
+  padding: 0 50px;
+  color: #f0f6f9;
+  border-radius: 10px 10px 10px 10px;
   cursor: pointer;
   position: relative;
   margin-bottom: 8px;
   margin-right: 5px;
-  background-color: #6998ab;
+  background-color: #1a374d;
 }
 
 /* NAVBAR */
