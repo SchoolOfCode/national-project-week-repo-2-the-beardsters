@@ -1,0 +1,41 @@
+/* USER CHOICE */
+
+.form-user-choice {
+  height: 100px;
+  width: 100px;
+}
+
+.btn-choice-frontend {
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 18px;
+  display: flex;
+  width: 170px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  color: #f0f6f9;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 8px;
+  margin-right: 5px;
+  background-color: #1a374d;
+}
+
+.btn-choice-backend {
+  font-size: 18px;
+  display: flex;
+  width: 170px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  color: #f0f6f9;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 8px;
+  margin-right: 5px;
+  background-color: #1a374d;
+}

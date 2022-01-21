@@ -1,9 +1,15 @@
+import Styles from "./navbar.module.css";
+
 function Navbar() {
   return (
-    <nav>
-      <a href="#">Home</a>
+    <nav className={Styles.navbar}>
+      <a className={Styles.homebutton} href="#">
+        Home
+      </a>
 
-      <a href="#">Resources</a>
+      <a className={Styles.resourcesbutton} href="#">
+        Resources
+      </a>
     </nav>
   );
 }

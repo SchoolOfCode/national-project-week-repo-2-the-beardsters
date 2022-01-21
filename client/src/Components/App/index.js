@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import Navbar from "../Navbar/navbar.js";
 import Userchoice from "../Userchoice/userchoice.js";
 import UserAnswer from "../UserAnswer";
@@ -7,6 +6,7 @@ import ChallengeDesc from "../ChallengeDesc";
 import Userworkspace from "../Userworkspace/workspace";
 import Hints from "../Hints/hints";
 import Darkmode from "../Darkmode/darkmode";
+import AnswerReveal from "../AnswerReveal/answer.js";
 
 const API_URL =
   process.env.REACT_APP_API_URL ||
@@ -44,19 +44,14 @@ function App() {
 
   return (
     <div className="App" id="home">
-      <Darkmode className="dark-mode" />
-      <Navbar className="navbar" />
-      <Userchoice className="userchoice" getQuestion={getQuestion} />
-      <Userworkspace className="userworkspace" message={message} />
-      <Hints className="hints" message={message} />
-      <ChallengeDesc className="challenge-desc" message={message} />
-      <details name="See answer" value="See answer" placeholder="see answer">
-        <summary>See Answer</summary>
-        <div> {message.answer}</div>
-      </details>
-      <div>Score: {score}</div>
+      <Darkmode />
+      <Navbar />
+      <Userchoice getQuestion={getQuestion} />
+      <Userworkspace message={message} />
+      <AnswerReveal message={message} score={score} />
+      <Hints message={message} />
+      <ChallengeDesc message={message} />
       <UserAnswer
-        className="user-answer"
         onClick={(e) => submitFunction(e)}
         onChange={(e) => getUserAnswer(e)}
         value={answer}

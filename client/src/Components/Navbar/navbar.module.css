@@ -1,0 +1,43 @@
+/* NAVBAR */
+
+.navbar {
+  height: 45px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #6998ab;
+}
+
+.homebutton {
+  font-size: 18px;
+  display: flex;
+  width: 70px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  color: #f0f6f9;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  margin: 2px;
+  margin-left: 25px;
+  background-color: #1a374d;
+}
+
+.resourcesbutton {
+  font-size: 18px;
+  display: flex;
+  width: 70px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  color: #f0f6f9;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  margin: 2px;
+  margin-right: 35px;
+  background-color: #1a374d;
+}

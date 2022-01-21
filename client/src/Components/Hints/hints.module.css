@@ -1,0 +1,15 @@
+/* USER HINT */
+
+.userhint {
+  background-color: #f0f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+  margin: auto;
+  border-style: solid;
+  border-radius: 0 0 10px 10px;
+  border-color: #6998ab;
+  border-width: 20px;
+}

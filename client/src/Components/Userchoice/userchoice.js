@@ -1,14 +1,16 @@
+import Styles from "./userchoice.module.css";
+
 function Userchoice({ getQuestion }) {
   return (
-    <div className="form-user-choice">
+    <div className={Styles.formuserchoice}>
       <button
-        className="btn-choice-frontend"
+        className={Styles.btnchoicefrontend}
         onClick={() => getQuestion("frontend")}
       >
         Frontend
       </button>
       <button
-        className="btn-choice-backend"
+        className={Styles.btnchoicebackend}
         onClick={() => getQuestion("backend")}
       >
         Backend

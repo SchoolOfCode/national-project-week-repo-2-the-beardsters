@@ -1,6 +1,8 @@
+import Styles from "./useranswer.module.css";
+
 export default function UserAnswer(userResponse) {
   return (
-    <form action="#">
+    <form className={Styles.useranswer} action="#">
       <input
         type="text"
         placeholder="Add your answer here"

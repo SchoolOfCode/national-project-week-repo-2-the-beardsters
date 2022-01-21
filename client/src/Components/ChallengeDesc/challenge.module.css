@@ -1,0 +1,32 @@
+/* CHALLENGE DESCRIPTION */
+
+.challengedescpanel {
+  background-color: #f0f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  margin: auto;
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #6998ab;
+  border-width: 20px;
+  position: absolute;
+  margin-top: -580px;
+  margin-left: 1300px;
+}
+
+.challengedesctitle {
+  text-align: center;
+  margin-top: -200px;
+  margin-bottom: 50px;
+  margin-left: 90px;
+}
+
+.challengedesc {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  margin-right: 90px;
+}
