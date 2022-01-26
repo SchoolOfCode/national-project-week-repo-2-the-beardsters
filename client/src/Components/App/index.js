@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/navbar.js";
 import Userchoice from "../Userchoice/userchoice.js";
 import UserAnswer from "../UserAnswer";
 import ChallengeDesc from "../ChallengeDesc";
 import Userworkspace from "../Userworkspace/workspace";
 import Hints from "../Hints/hints";
-import Darkmode from "../Darkmode/darkmode";
+import ThemeSwitch from "../ThemeSwitch/themeSwitch";
 import AnswerReveal from "../AnswerReveal/answer.js";
 
 const API_URL =
@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App" id="home">
-      <Darkmode />
+      <ThemeSwitch />
       <Navbar />
       <Userchoice getQuestion={getQuestion} />
       <Userworkspace message={message} />

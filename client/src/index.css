@@ -1,3 +1,16 @@
+html {
+  --primary-background-colour: #f0f6f9;
+  --switch-ball-colour: #f0f6f9;
+  --panel-inner-colour: #f0f6f9;
+  --navbar-colour: #6998ab;
+  --panel-outer-colour: #6998ab;
+  --score-colour: #406882;
+  --button-colour: #1a374d;
+  --score-outline-colour: #1a374d;
+  --switch-background-colour: #000000;
+  --switch-icon-colour: #ffe300;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
