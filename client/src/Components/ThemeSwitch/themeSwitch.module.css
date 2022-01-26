@@ -1,10 +1,17 @@
 /* DARK MODE */
 
-.switch-container {
-  margin-bottom: 5px;
+/* this is required because of the empty element we are using, instead of the input checkbox from original implimentation */
+.darkMode {
+  text-align: center;
 }
 
-label {
+.switch {
+  margin-bottom: 5px;
+  background: none;
+  border: none;
+}
+
+.label {
   display: flex;
   width: 60px;
   height: 35px;
@@ -17,39 +24,39 @@ label {
   position: relative;
 }
 
-label i {
+.label i {
   font-size: 18px;
   transition: 0.3s;
 }
 
-input:checked + label {
+.darkMode + .label {
   background: #6998ab;
 }
 
-label .fa-sun {
+.label .fa-sun {
   color: #ffe300;
   transition: 0.3s;
   opacity: 1;
 }
 
-input:checked + label .fa-sun {
+.darkMode + .label .fa-sun {
   transform: translateX(-43px) rotate(160deg);
   opacity: 0;
 }
 
-label .fa-moon {
+.label .fa-moon {
   color: #f0f6f9;
   transition: 0.3s;
   opacity: 0;
   transform: translateX(43px) rotate(250deg);
 }
 
-input:checked + label .fa-moon {
+.darkMode + .label .fa-moon {
   transform: translateX(0) rotate(0);
   opacity: 1;
 }
 
-label .ball {
+.label .ball {
   position: absolute;
   display: block;
   width: 25px;
@@ -61,11 +68,7 @@ label .ball {
   transition: 0.3s;
 }
 
-input:checked + label .ball {
+.darkMode + .label .ball {
   transform: translateX(37px);
   background: #1a374d;
-}
-
-.dark-mode-input {
-  display: none;
 }

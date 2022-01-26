@@ -3,32 +3,6 @@
   padding: 0;
 }
 
-:root {
-  --primary-background-colour: #f0f6f9;
-  --switch-ball-colour: #f0f6f9;
-  --panel-inner-colour: #f0f6f9;
-  --navbar-colour: #6998ab;
-  --panel-outer-colour: #6998ab;
-  --score-colour: #406882;
-  --button-colour: #1a374d;
-  --score-outline-colour: #1a374d;
-  --switch-background-colour: #000000;
-  --switch-icon-colour: #ffe300;
-}
-
-.dark-mode {
-  --primary-background-colour: #1a374d;
-  --switch-ball-colour: #1a374d;
-  --panel-inner-colour: #000000;
-  --navbar-colour: #406882;
-  --panel-outer-colour: #406882;
-  --score-colour: #406882;
-  --button-colour: #6998ab;
-  --score-outline-colour: #6998ab;
-  --switch-background-colour: #6998ab;
-  --switch-icon-colour: #f0f6f9;
-}
-
 body {
   text-align: center;
   background-repeat: repeat;
